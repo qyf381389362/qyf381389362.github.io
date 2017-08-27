@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* Clear */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent; }
+
+* {
+  word-wrap: break-word; }
+
+body, textarea, pre, input {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  font: 14px/1.6 microsoft yahei,Helvetica,arial,sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+:focus {
+  outline: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  text-decoration: none; }
+
+input, textarea {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+textarea {
+  resize: none; }
+
+img {
+  border: 0 none;
+  margin: 0;
+  padding: 0; }
+
+input:focus, textarea:focus {
+  outline: none; }
+
+ul, dl, ol, li, dd, p, dt, h1, h2, h3, h4 {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+input, textarea {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+textarea, input[type="text"], input[type="password"] {
+  background: #fff; }
+
+a {
+  color: #888;
+  text-decoration: none; }
+
+a:focus {
+  outline: medium none; }
+
+.clear:before, .clear:after {
+  content: "";
+  display: table; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  height: 1px;
+  zoom: 1; }
+
+/* Clear Ends*/
+
+.sketch{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: #2a2a2a;
+}
+
+header{
+  text-align: center;
+  background-color: #ff6268;
+  position: relative;
+  z-index: 0;
+}
+#title{
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-size: 70px;
+  color: #1a1a1a;
+}
+#subtitle{
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 24px;
+  color: #1a1a1a;
+}
+#homepage{
+  padding-bottom: 80px;
+}
+.button{
+  color: #d4f9e6;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  line-height: 40px;
+  width: 120px;
+  border: 1px solid #d4f9e6;
+  margin-top: 15px;
+  transition: all 0.2s ease;
+}
+.button:hover{
+  background-color: rgba(100,100,100,0.4);
+}
+.container{
+  width: 1200px;
+  height: 0;
+  margin: -50px auto 0;
+}
+
+.hljs{
+  font-family: "Consolas";
+}
+
+.card{
+  min-height: 200px;
+  width: 96%;
+  background-color: #1a1a1a;
+  margin: auto;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 7px 2px #151515;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.cardtitle{
+  font-size: 26px;
+  color: #ffffff;
+  padding-bottom: 10px;
+  font-weight: bold;
+
+}
+
+.card p{
+  font-size: 18px;
+  line-height: 32px;
+  text-indent: 2em;
+  color: #dddddd;
+}
+
+.card a{
+  color: #dddddd;
+}
+.card a:hover{
+  text-decoration: underline;
+}
+.card b{
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.cardcontent{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.cardcontent:last-child{
+  margin-bottom: 0;
+}
+
+.cardpart{
+  width: 50%;
+  float: left;
+  padding: 5px;
+  box-sizing: border-box;
+}
+#start{
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px){
+  .container{
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1024px){
+  .cardpart{
+    width: 100%;
+    float: none;
+  }
+}
+@media screen and (max-width: 580px){
+  #title{
+    font-size: 60px;
+  }
+  #subtitle{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 460px){
+  #title{
+    font-size: 40px;
+  }
+  #subtitle{
+    font-size: 16px;
+  }
+}

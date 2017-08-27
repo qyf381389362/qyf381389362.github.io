@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小月月七夕快乐</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="节日礼物，惊喜,有趣,最美">
+	<meta name="description" content="七夕快乐">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="homepage"><a href="#" class="button">返回</a></div>
+	<div class="my_header">
+		<p>其实我是来凑数的，秦雨霏那家伙太懒，没做其他东西出来!!!</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='img-figure'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/1.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back img-back1">
+							<p>一个小小的问候，一份浓浓的真意~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='2'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/2.png" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back img-back2">
+							<p>七夕小礼物送给小胖妹~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='3'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/3.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back img-back3">
+							<p>阳光是你的点缀~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='4'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/4.png" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back img-back4">
+							<p>逗逼是你的智慧~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='5'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/5.png" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back img-back5">
+							<p>温情是你的妩媚~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='6'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/6.png" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back img-back6">
+							<p>爱心是你的宝贝~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='7'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/7.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back img-back7">
+							<p>愿快乐与你作陪~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='8'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/8.png" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back img-back8">
+							<p>愿美丽与你相随~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='9'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/9.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back img-back9">
+							<p>愿青春为你陶醉~,七夕快乐</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+	(function(){
+		// 获得元素的宽度
+		var girWidth=document.getElementById('img-figure').offsetWidth;
+		// 获得元素数组
+		var figuresArr=document.getElementsByClassName('img-figure');
+		// 初始化isinverse状态和事件处理器
+		for(var i=0;i<figuresArr.length;i++){
+			// console.log(figuresArr[i]);
+			// debugger;
+			figuresArr[i].setAttribute('isinverse','false');
+
+			if(isMobile()){
+				figuresArr[i].addEventListener("click",figHandler,'false');
+				console.log('移动端注册点击事件');
+			}else{
+				// TODO:Bug1 因为有3D旋转所以会触发多次..
+				figuresArr[i].addEventListener("mouseover",figHandler,'false');
+				figuresArr[i].addEventListener("mouseout",figHandler,'false');
+				console.log('PC端注册移上和移出事件');
+			}
+		}
+
+		function figHandler(e){
+		 	// console.log(this);
+		 	// debugger;
+
+		 	// 找到元素索引
+		 	var index;
+		 	for(var i=0;i<figuresArr.length;i++){
+		 		if(figuresArr[i]==this){
+		 			index=i;
+		 		}
+			}
+			// console.log('点击图片',index);
+			// 翻转元素
+			inverse(index);
+			
+			e.preventDefault();
+			e.stopPropagation();
+		}
+
+		function inverse(index){
+	    	var imgFigureClassName='img-figure';
+
+	    	// isinverse==false表示正面
+	    	if(figuresArr[index].getAttribute('isinverse')=='false'){
+	    		figuresArr[index].className=imgFigureClassName+" is-inverse";
+	    		figuresArr[index].setAttribute('isinverse','true');
+	    		//transform: translate(250px) rotateY(180deg);
+				// -webkit-transform: translate(250px) rotateY(180deg);
+	    		figuresArr[index].style.transform='translate('+girWidth+'px) rotateY(180deg)'
+	    		figuresArr[index].style.webkitTransform='translate('+girWidth+'px) rotateY(180deg)'
+	    	}else{
+	    		figuresArr[index].className=imgFigureClassName;
+	    		figuresArr[index].setAttribute('isinverse','false');
+	    		figuresArr[index].style.transform='translate(0px) rotateY(0deg)'
+	    		figuresArr[index].style.webkitTransform='translate(0px) rotateY(0deg)'
+	    	}
+	    }
+
+	    function isMobile(){
+	    	var ua =  navigator.userAgent;
+			var isAndroid = /Android/i.test(ua);
+			var isBlackBerry = /BlackBerry/i.test(ua);
+			var isWindowPhone = /IEMobile/i.test(ua);
+			var isIOS = /iPhone|iPad|iPod/i.test(ua);
+			var res = isAndroid || isBlackBerry || isWindowPhone || isIOS;
+			console.log('是手机吗？',res);
+			return res;
+	    }
+	})()
+	</script>
+</body>
+</html>
