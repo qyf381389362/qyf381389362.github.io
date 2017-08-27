@@ -1,0 +1,165 @@
+.col-xs-4{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.col-xs-4 a{
+    margin-bottom: 0px;
+}
+
+.container {
+    margin-top: 40px;
+}
+.my_header{
+    margin: 20px auto;
+    font-size: 40px;
+    text-align: center;
+}
+/*<div class="col-xs-4 col-md-4 img-sec">
+    <figure class="img-figure is-inverse">
+        <a href="#" class="thumbnail">
+            <img src="imgs/1.jpg" alt="...">
+        </a>
+        <figcaption>
+            <div class="img-back">
+                <p>第1张图片的描述</p>
+            </div>
+        </figcaption>
+    </figure> 
+</div>*/
+.img-sec{
+    /*width: 250px;
+    height: 180px;position: relative;*/
+    overflow: hidden;
+
+    perspective:1800px;
+    -webkit-perspective:1800px;
+    -o-perspective:1800px;
+    -moz-perspective:1800px;
+    -ms-perspective:1800px;
+}
+/*3 图片区样式*/
+.img-figure{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.img-figure figcaption{
+    text-align: center;
+}
+.img-figure figcaption .img-back p{
+
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.img-figure{
+
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+
+    cursor: pointer;
+
+    transform-origin: 0 50% 0;
+    -webkit-transform-origin: 0 50% 0;
+    -o-transform-origin: 0 50% 0;
+    -moz-transform-origin: 0 50% 0;
+    -ms-transform-origin: 0 50% 0;
+
+    transition:transform .6s ease-in-out;
+
+    -webkit-transition:-webkit-transform .6s ease-in-out;
+    -o-transition:transform .6s ease-in-out;
+    -moz-transition:transform .6s ease-in-out;
+    -ms-transition:transform .6s ease-in-out;
+}
+.img-figure.is-inverse{
+    /*transform: translate(250px) rotateY(180deg);
+    -webkit-transform: translate(250px) rotateY(180deg);
+    -o-transform: translate(250px) rotateY(180deg);
+    -moz-transform: translate(250px) rotateY(180deg);
+    -ms-transform: translate(250px) rotateY(180deg);*/
+}
+
+.img-figure figcaption .img-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+
+    color: #a7a0a2;
+    font-size: 22px;
+    /* line-height: 1.25; */
+    text-align: center;
+    /*修改图片翻转背景颜色的*/
+    /* background-color: #fff; */
+    
+    transform: rotateY(180deg) translateZ(1px);
+    -webkit-transform: rotateY(180deg) translateZ(1px);
+    -o-transform: rotateY(180deg) translateZ(1px);
+    -moz-transform: rotateY(180deg) translateZ(1px);
+    -ms-transform: rotateY(180deg) translateZ(1px);
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    -moz-backface-visibility:hidden; 
+    -ms-backface-visibility:hidden;
+}
+.img-figure figcaption .img-back p{
+    margin: 0 auto;
+    margin-top: 80px;
+    line-height: 0.5;
+}
+.img-figure figcaption .img-back1{
+    background-color: #4cc5f4;
+}
+.img-figure figcaption .img-back2{
+    background-color: #ea757f;
+}
+.img-figure figcaption .img-back3{
+    background-color: #7577ea;
+}
+.img-figure figcaption .img-back4{
+    background-color: #8dea75;
+}
+.img-figure figcaption .img-back5{
+    background-color: #fe4c40;
+}
+.img-figure figcaption .img-back6{
+    background-color: #ffc107;
+}
+.img-figure figcaption .img-back7{
+    background-color: #6830cb;
+}
+.img-figure figcaption .img-back8{
+    background-color: #f02424;
+}
+.img-figure figcaption .img-back9{
+    background-color: #fd5b78;
+}
+.homepage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	background-color: #1a1a1a;
+	border-bottom-right-radius: 10px;
+}
+.homepage a{
+  color: #bbb;
+}
